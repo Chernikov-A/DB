@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="851.0" prefWidth="1465.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dbproject.controllers.VboxControllers.ProductController">
+   <children>
+      <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <tabs>
+          <Tab text="Список товаров ">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="ViewTabProduct" layoutX="263.0" layoutY="162.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="61.0" AnchorPane.leftAnchor="58.0" AnchorPane.rightAnchor="58.0" AnchorPane.topAnchor="61.0">
+                          <columns>
+                              <TableColumn fx:id="IdProduct" prefWidth="75.0" text="Id" />
+                            <TableColumn fx:id="ColumName" prefWidth="75.0" text="Название" />
+                            <TableColumn fx:id="CollAmount" prefWidth="75.0" text="Количество" />
+                              <TableColumn fx:id="CollPrice" prefWidth="75.0" text="Цена" />
+                              <TableColumn fx:id="CollCategory" prefWidth="75.0" text="Категория" />
+                              <TableColumn fx:id="CollProvider" prefWidth="75.0" text="Поставщик" />
+                          </columns>
+                        </TableView>
+                        <Button fx:id="addProduct" layoutX="60.0" layoutY="25.0" mnemonicParsing="false" onAction="#ActionAddProduct" prefHeight="30.0" prefWidth="114.0" text="Добавить" />
+                        <Button fx:id="EditProduct" layoutX="180.0" layoutY="25.0" mnemonicParsing="false" onAction="#ActionEditProduct" prefHeight="30.0" prefWidth="114.0" text="Редактировать" />
+                        <Button fx:id="deleteProduct" layoutX="300.0" layoutY="25.0" mnemonicParsing="false" onAction="#ActionDeleteProduct" prefHeight="30.0" prefWidth="114.0" text="Удалить" />
+                        <Button fx:id="ButtonUpdateProduct" layoutX="420.0" layoutY="25.0" mnemonicParsing="false" onAction="#UpdateProduct" prefHeight="30.0" prefWidth="114.0" text="Обновить" />
+                        <TextField fx:id="SearchProducr" layoutX="1203.0" layoutY="25.0" prefHeight="25.0" prefWidth="316.0" promptText="Поиск" AnchorPane.rightAnchor="57.0" />
+                     </children></AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Список орг-техники">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="ViewOffice" layoutX="136.0" layoutY="107.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="61.0" AnchorPane.leftAnchor="58.0" AnchorPane.rightAnchor="58.0" AnchorPane.topAnchor="61.0">
+                          <columns>
+                            <TableColumn fx:id="id" prefWidth="75.0" text="Id" />
+                            <TableColumn fx:id="name" prefWidth="75.0" text="Название" />
+                              <TableColumn fx:id="count" prefWidth="75.0" text="Количество" />
+                              <TableColumn fx:id="amount" prefWidth="75.0" text="Цена" />
+                          </columns>
+                        </TableView>
+                        <Button fx:id="AddOffice" layoutX="60.0" layoutY="25.0" mnemonicParsing="false" onAction="#ActionAddOffice" prefHeight="30.0" prefWidth="114.0" text="Добавить" />
+                        <Button fx:id="EditOffice" layoutX="180.0" layoutY="25.0" mnemonicParsing="false" onAction="#ActionEditOffice" prefHeight="30.0" prefWidth="114.0" text="Редактировать" />
+                        <Button fx:id="DeleteOffice" layoutX="300.0" layoutY="25.0" mnemonicParsing="false" onAction="#ActionDeleteOffice" prefHeight="30.0" prefWidth="114.0" text="Удалить" />
+                        <Button fx:id="UpdateOffice" layoutX="420.0" layoutY="25.0" mnemonicParsing="false" onAction="#UpdateOffice" prefHeight="30.0" prefWidth="114.0" text="Обновление" />
+                        <TextField fx:id="SearchOFfice" layoutX="1091.0" layoutY="28.0" prefHeight="25.0" prefWidth="316.0" promptText="Поиск" AnchorPane.rightAnchor="57.0" />
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="900.0" prefWidth="1600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dbproject.controllers.MainPanelController">
+   <children>
+      <BorderPane fx:id="borderPanel" layoutY="4.0" prefHeight="492.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <AnchorPane prefHeight="49.0" prefWidth="800.0" style="-fx-background-color: #47A76A;" BorderPane.alignment="CENTER" />
+         </top>
+         <left>
+            <VBox prefHeight="851.0" prefWidth="147.0" style="-fx-background-color: #D0F0C0;" BorderPane.alignment="CENTER">
+               <children>
+
+                              <Button fx:id="idDocument" mnemonicParsing="false" onAction="#ButtonPaneDoc" prefHeight="33.0" prefWidth="137.0" style="-fx-background-color: #D0F0C0;" text="Документы">
+                     <VBox.margin>
+                        <Insets top="28.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="idProduct" mnemonicParsing="false" onAction="#PaneBottonPro" prefHeight="33.0" prefWidth="135.0" style="-fx-background-color: #D0F0C0;" text="Товары">
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="idTasks" mnemonicParsing="false" onAction="#PanelButtonTasks" prefHeight="33.0" prefWidth="136.0" style="-fx-background-color: #D0F0C0;" text="Задачи">
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="idProcesses" mnemonicParsing="false" onAction="#PanelButtonProcesses" prefHeight="33.0" prefWidth="141.0" style="-fx-background-color: #D0F0C0;" text="Процессы">
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="idAccounting" contentDisplay="BOTTOM" mnemonicParsing="false" onAction="#PanelButtonAccouting" prefHeight="33.0" prefWidth="136.0" style="-fx-background-color: #D0F0C0;" text="Бухгалтерия" VBox.vgrow="ALWAYS">
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </Button>
+
+                           </children>
+            </VBox>
+         </left>
+         <center>
+            <AnchorPane prefHeight="451.0" prefWidth="442.0" BorderPane.alignment="CENTER">
+               <children>
+                  <StackPane fx:id="idContentArea" layoutX="-2.0" layoutY="-2.0" prefHeight="853.0" prefWidth="1467.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-2.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-2.0" />
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
